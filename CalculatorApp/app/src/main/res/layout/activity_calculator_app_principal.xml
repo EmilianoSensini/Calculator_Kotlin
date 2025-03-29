@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    tools:context=".CalculatorAppPrincipalActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDisplay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/background_display"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1.0">
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:ellipsize="start"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="aksldfalkdjfldfksd" />
+    </androidx.cardview.widget.CardView>
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:padding="8dp"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardViewDisplay">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnAC"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="AC"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/ac_color" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnParentheses"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="()"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/light_blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnPower"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="^"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/light_blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnDivide"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="÷"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/light_blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnSeven"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnEight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnNine"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnMultiply"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="×"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/light_blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnFour"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnFive"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnSix"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnSubtract"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/light_blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnOne"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnTwo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnThree"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/light_blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnZero"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnPoint"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="."
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnDeleteLast"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="«"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnEqual"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="="
+            android:textColor="@color/white"
+            app:backgroundTint="@color/dark_blue" />
+
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
